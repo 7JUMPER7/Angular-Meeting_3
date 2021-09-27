@@ -1,0 +1,22 @@
+.container img {
+  margin: 20px;
+  height: 300px;
+}
+.container p {
+  margin: 0;
+  text-align: center;
+}
+.container a {
+  color: white;
+  text-decoration: none;
+}
+.container .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 7px;
+}
+.container .item span {
+  font-weight: bold;
+}

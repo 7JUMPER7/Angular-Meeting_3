@@ -1,0 +1,30 @@
+<div class="container">
+  <h3>{{person.name|titlecase}}</h3>
+  <div class="item">
+    <span>Phone:</span>
+    <p>{{person.phone}}</p>
+  </div>
+  <div class="item">
+    <span>Email:</span>
+    <p>{{person.email}}</p>
+  </div>
+  <div class="item">
+    <span>City:</span>
+    <p>{{person.city}}</p>
+  </div>
+  <div class="item">
+    <span>Experience:</span>
+    <p>{{person.experience|number}} years of experience</p>
+  </div>
+  <div class="item">
+    <span>Skills:</span>
+    <p>{{person.skills}}</p>
+  </div>
+  <div class="photos">
+    <img *ngFor="let photo of person.photoPaths" src={{photo}}>
+  </div>
+  <div class="item">
+    <span>Links:</span>
+    <a *ngFor="let link of person.links" href={{link}} target="blanck">{{getLinkDomain(link)}}<br></a>
+  </div>
+</div>
